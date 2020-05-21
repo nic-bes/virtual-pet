@@ -1,0 +1,18 @@
+{
+  "name": "virtual-pet",
+  "version": "1.0.0",
+  "description": "virtual pet exercise using object oriented programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "virtual-pet"
+  },
+  "author": "nic bes",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
