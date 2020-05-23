@@ -59,4 +59,34 @@ describe('feed', () => {
         pet.feed();
         expect(pet.hunger).toEqual(0);
     });
-}); 
+});
+describe('check up', () => {
+    it('returns a string describing feeling', () => {
+        const pet = new Pet('fido');
+        pet.hunger = 5;
+        pet.fitness = 3;
+        pet.checkUp();
+        expect(pet.checkUp('Fido')).toBe('I am hungry AND I need a walk');
+    });
+    it('returns a string describing level of hunger', () => {
+        const pet = new Pet('fido');
+        pet.hunger = 5;
+        pet.fitness = 4;
+        pet.checkUp();
+        expect(pet.checkUp('Fido')).toBe('I am hungry');
+    });
+    it('returns a string describing level of fitness', () => {
+        const pet = new Pet('fido');
+        pet.hunger = 4;
+        pet.fitness = 3;
+        pet.checkUp();
+        expect(pet.checkUp('Fido')).toBe('I need a walk');
+    });
+    it('returns a string describing level of fitness', () => {
+        const pet = new Pet('fido');
+        pet.hunger = 4;
+        pet.fitness = 4;
+        pet.checkUp();
+        expect(pet.checkUp('Fido')).toBe('I feel great');
+    });
+});
