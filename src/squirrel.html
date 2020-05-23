@@ -1,0 +1,229 @@
+<style>
+    .squirrel {
+
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .squirrel-top {
+        top: 10%;
+        left: 25%;
+        background: grey;
+        width: 50%;
+        height: 45%;
+        border-radius: 30% 30% 40% 40%;
+    }
+
+    .squirrel-bottom {
+        top: 40%;
+        left: 25%;
+        background: grey;
+        width: 50%;
+        height: 45%;
+        border-radius: 30% 30% 30% 30%;
+    }
+
+    .right-hand {
+        top: 10%;
+        left: -5%;
+        background: grey;
+        width: 30%;
+        height: 60%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    .left-hand {
+        top: 10%;
+        left: 75%;
+        background: grey;
+        width: 30%;
+        height: 60%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-45deg);
+        z-index: -1;
+    }
+
+    .tail-top {
+        top: -40%;
+        left: 99%;
+        background: grey;
+        width: 30%;
+        height: 100%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(50deg);
+        z-index: -1;
+    }
+
+    .right-cheek {
+        top: 50%;
+        left: 40%;
+        background: white;
+        width: 50%;
+        height: 50%;
+        border-radius: 70% 70% 60% 60%;
+    }
+
+    .left-cheek {
+        top: 50%;
+        left: 10%;
+        background: white;
+        width: 50%;
+        height: 50%;
+        border-radius: 70% 70% 0% 60%;
+    }
+
+    .belly {
+        top: 0%;
+        left: 12.5%;
+        background: white;
+        width: 75%;
+        height: 80%;
+        border-radius: 120% 120% 100% 100%;
+    }
+
+    .right-feet {
+        top: 65%;
+        left: 70%;
+        background: grey;
+        width: 25%;
+        height: 60%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-80deg);
+        z-index: -2222;
+    }
+
+    .left-feet {
+        top: 65%;
+        left: 5%;
+        background: grey;
+        width: 25%;
+        height: 60%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(80deg);
+        z-index: -2222;
+    }
+
+    .right-eye {
+        top: 30%;
+        left: 60%;
+        background: black;
+        width: 15%;
+        height: 17%;
+        border-radius: 50%;
+    }
+
+    .left-eye {
+        top: 30%;
+        left: 25%;
+        background: black;
+        width: 15%;
+        height: 17%;
+        border-radius: 50%;
+    }
+
+    .sparkle {
+        top: 25%;
+        left: 15%;
+        background: white;
+        width: 35%;
+        height: 35%;
+        border-radius: 50%;
+    }
+
+    .blush-right {
+        top: 55%;
+        left: 16%;
+        background: pink;
+        width: 15%;
+        height: 10%;
+        border-radius: 50%;
+    }
+
+    .blush-left {
+        top: 55%;
+        left: 69%;
+        background: pink;
+        width: 15%;
+        height: 10%;
+        border-radius: 50%;
+    }
+
+    .ear-right {
+        top: -15%;
+        left: -10%;
+        background: grey;
+        width: 45%;
+        height: 20%;
+        border-radius: 50%;
+        transform: rotate(70deg)
+    }
+
+    .ear-left {
+        top: -15%;
+        left: 65%;
+        background: grey;
+        width: 45%;
+        height: 20%;
+        border-radius: 50%;
+        transform: rotate(110deg)
+    }
+
+    .nose {
+        top: 48%;
+        left: 40%;
+        background: black;
+        width: 20%;
+        height: 15%;
+        border-radius: 30% 30% 80% 80%;
+    }
+
+    .teeth {
+        top: 60%;
+        left: 44%;
+        background: orange;
+        width: 12%;
+        height: 15%;
+        border-radius: 20%;
+    }
+
+    body {
+        background: #c6faf1;
+    }
+
+    .squirrel * {
+        position: absolute;
+    }
+</style>
+<div class="squirrel">
+    <div class="squirrel-bottom">
+        <div class="right-feet"></div>
+        <div class="left-feet"></div>
+        <div class="tail-top"></div>
+        <div class="belly"></div>
+        <div class="right-hand"></div>
+        <div class="left-hand"></div>
+    </div>
+    <div class="squirrel-top">
+        <div class="right-cheek"></div>
+        <div class="left-cheek"></div>
+
+        <div class="right-eye">
+            <div class="sparkle"></div>
+        </div>
+        <div class="left-eye">
+            <div class="sparkle"></div>
+        </div>
+        <div class="blush-right"></div>
+        <div class="blush-left"></div>
+        <div class="ear-right"></div>
+        <div class="ear-left"></div>
+        <div class="teeth"></div>
+        <div class="nose"></div>
+    </div>
+</div>
