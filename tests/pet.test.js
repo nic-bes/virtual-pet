@@ -82,11 +82,41 @@ describe('check up', () => {
         pet.checkUp();
         expect(pet.checkUp('Fido')).toBe('I need a walk');
     });
-    it('returns a string describing level of fitness', () => {
+    it('returns a string describing level of fitness & hunger', () => {
         const pet = new Pet('fido');
         pet.hunger = 4;
         pet.fitness = 4;
         pet.checkUp();
         expect(pet.checkUp('Fido')).toBe('I feel great');
+    });
+    describe('isAlive', () => {
+        it('isAlive returns true, all ok', () => {
+            const pet = new Pet('fido');
+            pet.age = 29;
+            pet.hunger = 9;
+            pet.fitness = 1;
+            expect(pet.isAlive).toEqual(true);
+        });
+        it('isAlive returns false, too old', () => {
+            const pet = new Pet('fido');
+            pet.age = 30;
+            pet.hunger = 9;
+            pet.fitness = 1;
+            expect(pet.isAlive).toEqual(false);
+        });
+        it('isAlive returns false, too hungry', () => {
+            const pet = new Pet('fido');
+            pet.age = 29;
+            pet.hunger = 10;
+            pet.fitness = 1;
+            expect(pet.isAlive).toEqual(false);
+        });
+        it('isAlive return false, too unfit', () => {
+            const pet = new Pet('Fido');
+            pet.age = 29;
+            pet.hunger = 9;
+            pet.fitness = 0;
+            expect(pet.isAlive).toEqual(false);
+        });
     });
 });
